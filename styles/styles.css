@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --azul-principal: rgb(15, 15, 23);
+    --cinza-secundario: #c0c0c0;
+    --botao-azul: #167bf7;
+    --cor-de-fundo: #00030c;
+}
+
+* {
+   margin: 0;
+   padding: 0; 
+}
+
+.cabecalho{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 35px;
+    margin-left: 10%;
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #22D4FD;
+    text-decoration: none;
+
+}
+
+.logo{
+    width: 10%;
+}
+
+.cabecalho__menu{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    gap: 50px;
+      
+}
+
+.cabecalho__menu__link:hover{
+    transform: scale(1.5);
+    color: rgb(15, 15, 23);
+    transition: transform 0.2s ease-in-out;
+    
+}
+
+.img__abertura {
+    width: 100%;
+    max-height: 500px; /* Altura máxima fixa */
+    overflow: hidden; /* Oculta partes que ultrapassam os limites */
+    position: relative;
+    animation: moveRight 50s infinite;
+}
+
+.img__abertura img {
+    width: 90%;
+    height: auto; /* Mantém a proporção da imagem */
+    object-fit: cover; /* Cobre todo o contêiner */
+    object-position: center bottom; /* Posiciona a imagem para mostrar a metade inferior */
+    
+}
+
+.obs {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    justify-content: center;
+    color: var(--azul-principal);
+}
+
+.titulo {
+    font-family: "Montserrat", sans-serif;
+    font-size: 50px;
+    justify-content: center;
+    color: var(--azul-principal);
+    text-align: center;
+    padding: 10px;
+}
+@media (max-width: 768px) {
+    .cabecalho__menu{
+        justify-content: left;
+        font-size: calc(12px + 0.5vw);
+    }
+    .botao {
+          font-size: 1rem;
+        }
+}
+
+.rodape {
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    color: var(--azul-principal);
+
+}
+
+.main__div {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+  
+.botao {
+    width: 30%;
+    height: 100px;
+    background-color: rgb(3, 42, 105);
+    border-radius: 20%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+
+.botao:hover {
+    /* Estilos aplicados ao passar o mouse sobre os retângulos */
+    background-color: #4e89d6; /* Cor de fundo ao passar o mouse */
+}
+  
+    
+
